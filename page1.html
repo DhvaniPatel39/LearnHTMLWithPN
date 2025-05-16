@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dhvani Patel Color Changer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-size: 60px;
+            transition: color 0.5s ease;
+        }
+
+        .color-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .purple {
+            background-color: purple;
+        }
+
+        .cyan {
+            background-color: cyan;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="name">DHVANI PATEL</h1>
+
+    <div>
+        <button class="color-button red" onclick="changeColor('red')">Red</button>
+        <button class="color-button blue" onclick="changeColor('blue')">Blue</button>
+        <button class="color-button green" onclick="changeColor('green')">Green</button>
+        <button class="color-button orange" onclick="changeColor('orange')">Orange</button>
+        <button class="color-button purple" onclick="changeColor('purple')">Purple</button>
+        <button class="color-button cyan" onclick="changeColor('cyan')">Cyan</button>
+    </div>
+
+    <script>
+        function changeColor(color) {
+            document.getElementById("name").style.color = color;
+        }
+    </script>
+
+</body>
+
+</html>
